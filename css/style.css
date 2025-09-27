@@ -1,0 +1,15 @@
+.logo {
+    height: 75px;
+    background-color: lightgray;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header {
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+}

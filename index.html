@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Caca</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- Header Content -->
+    <header class="main-header">
+        <!-- Logo Website -->
+        <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="flex h-[100%] items-center gap-[2px]">
+                <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
+                <li><a class="border p-[8px] rounded" href="#profile">Profile</a></li>
+                <li><a class="border p-[8px] rounded" href="#achievement">Achievement</a></li>
+                <li><a class="border p-[8px] rounded" href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h1 class="text-[36px] font-bold">Hi <span id="username"></span>, Welcome to My Portfolio!</h1>
+            <p class="text-[18px]">Temukan perjalanan, keterampilan, dan pencapaian saya di bidang teknologi informasi dan pemrograman.</p>
+        </section>
+
+        <hr>
+
+        <!-- Profile Section -->
+        <section id="profile" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Profile</h2>
+            <p class="text-[18px] text-justify leading-relaxed max-w-4xl">
+                Hallo! Perkenalkan nama saya <b>Edi Dwi Seto</b>, Saya seorang lulusan SMK Teratai Putih Global 4 Bekasi jurusan
+                Rekayasa Perangkat Lunak yang memiliki ketertarikan bekerja di bidang teknologi informasi, keamanan informasi,
+                staff administrasi dan pemrograman. Saya telah belajar tentang pemrograman, basis data serta keamanan informasi.
+            </p>
+            <p class="text-[18px] text-justify leading-relaxed max-w-4xl">
+                Saya juga telah mengembangkan keterampilan praktis seperti penggunaan berbagai bahasa pemrograman dan keamanan
+                informasi. Saya memiliki keahlian dalam bidang pemrograman termasuk HTML, CSS, Python, dan JavaScript. Selain itu,
+                saya juga memiliki pengetahuan dasar tentang keamanan informasi, termasuk konsep-konsep seperti enkripsi, autentikasi,
+                dan pengelolaan risiko. Saya juga memiliki keterampilan dalam penggunaan microsoft office seperti Word, Excel, dan PowerPoint.
+                Saya adalah individu yang rajin, teliti, dan memiliki kemampuan komunikasi yang baik dan saya selalu bersemangat untuk mempelajari hal-hal baru.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Achievement Section -->
+        <section id="achievement" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Achievement</h2>
+            <p class="text-[18px] text-justify leading-relaxed max-w-4xl">
+                Berikut ini merupakan pencapaian yang sudah saya dapatkan:
+            </p>
+            <ol class="list-decimal list-inside text-[18px] leading-relaxed max-w-4xl">
+                <li>Sertifikat kompetensi berlembaga BNSP “Skema KKNI Level II pada Rekayasa Perangkat Lunak”</li>
+                <li>Sertifikat Fundamental of Data Analyst Fresh Graduate Academy Digital Talent Scholarship 2025</li>
+                <li>Sertifikat Fundamental of Data Science Fresh Graduate Academy Digital Talent Scholarship 2025</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Message Us Section -->
+        <section id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Message Us</h2>
+            <form>
+                <div class="mb-[10px]">
+                    <label for="name" class="block mb-[5px]">Name:</label>
+                    <input type="text" id="name" name="name" class="border p-[8px] rounded w-[300px]" required>
+                </div>
+                <div class="mb-[10px]">
+                    <label for="email" class="block mb-[5px]">Email:</label>
+                    <input type="email" id="email" name="email" class="border p-[8px] rounded w-[300px]" required>
+                </div>
+                <div class="mb-[10px]">
+                    <label for="message" class="block mb-[5px]">Message:</label>
+                    <textarea id="message" name="message" class="border p-[8px] rounded w-[300px] h-[100px]"
+                        required></textarea>
+                </div>
+                <button type="button" onclick="validateForm()"
+                    class="bg-blue-500 text-white p-[10px] rounded hover:bg-blue-600">Send</button>
+            </form>
+            <!-- Comment Section -->
+                <div id="commentSection" class="w-full max-w-md mt-6">
+                    <h3 class="text-[22px] font-semibold mb-3">Komentar</h3>
+                    <ul id="commentList" class="space-y-4">
+            <!-- Komentar baru akan ditambahkan di sini -->
+                    </ul>
+                </div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center p-[20px] bg-pink-200">© 2025 Caca's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
